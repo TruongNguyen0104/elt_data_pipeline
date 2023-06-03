@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: core
+    database: data-pipeline-388407
+    schema: crime_all
+
+    tables:
+      - name: crime_part_0
+      - name: crime_part_1
+      - name: crime_part_2
+      - name: crime_part_3
+      - name: crime_part_4
+      - name: crime_part_5
+      - name: crime_part_6
+      - name: crime_part_7
+      - name: crime_part_8
+      - name: crime_part_9
+      - name: crime_part_10
+      - name: crime_part_11
+      - name: crime_part_12
+      - name: crime_part_13
+      - name: crime_part_14
+      - name: crime_part_15
+
+models:
+  - name: crime_from_2018
+    description: details of crime in Chicago from 2018
+
+  # - name: monthly_crime_count
+  #   description: count number of crime monthly
