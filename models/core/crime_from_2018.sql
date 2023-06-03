@@ -59,7 +59,6 @@ select
     cast(District as integer) district,
     cast(Ward as integer) ward,
     cast(Year as integer) year_of_crime,
-    cast(Latitude as numeric) latitude,
-    cast(Longitude as numeric) longtitude
+    cast(Location as string) location
 from crime_from_2018_joined
 
