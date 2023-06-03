@@ -35,7 +35,7 @@ def write_local(df: pd.DataFrame, file_num: int) -> Path:
     Write DataFrame out locally as parquet file
     """
 
-    path = Path(f"../data/extract/crime_part_{file_num}.parquet")
+    path = Path(f"/opt/prefect/data/extract/crime_part_{file_num}.parquet")
     df.to_parquet(path,compression='gzip')
     return path
 
@@ -58,7 +58,7 @@ def elt_sub_flow_to_gcs(file_num:int = 0) -> None:
     SubFlow from local to gcs
     """
 
-    dataset_url =  f'../data/raw/part.{file_num}.parquet'
+    dataset_url =  f'/opt/prefect/data/raw/part.{file_num}.parquet'
 
     df = fetch(dataset_url)
     df_clean = clean(df)

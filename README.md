@@ -12,6 +12,8 @@ The user specifically acknowledges that the Chicago Police Department is not res
 
 ### Dataset description
 Our dataset is taken from Kaggle spanning five years of data. It contains around a million records and 23 columns.
+
+These are some columns in the data set:
 1. ID: Unique identifier for the record.
 2. Date: Date when the incident occurred. this is sometimes a best estimate.
 3. Primary_type: The primary description of the IUCR code.
