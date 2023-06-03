@@ -1,4 +1,10 @@
-
 target/
 dbt_packages/
 logs/
+authorization/
+data/extract/
+data/gcs/
+test.py
+.ipynb_checkpoints
+*.drawio
+*.drawio.bkp
